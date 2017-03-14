@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DynamicGridLayout" customModuleProvider="target">
+            <connections>
+                <outlet property="aCollectionView" destination="5PJ-0l-dq5" id="Mx7-06-GYd"/>
+                <outlet property="flowLayout" destination="2sT-m7-lB4" id="wkK-1A-APa"/>
+                <outlet property="layoutSegment" destination="wUe-cl-tS0" id="BJw-DJ-mD1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5PJ-0l-dq5">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2sT-m7-lB4" customClass="HomeFlowLayout" customModule="DynamicGridLayout" customModuleProvider="target">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1wd-I7-RzE"/>
+                        <outlet property="delegate" destination="-1" id="Jew-wX-c4f"/>
+                    </connections>
+                </collectionView>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmO-eM-mb8">
+                    <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ios.devdon.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtV-Kb-pdc">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="7bT-bT-7yR"/>
+                        <constraint firstItem="LtV-Kb-pdc" firstAttribute="leading" secondItem="QmO-eM-mb8" secondAttribute="leading" id="KWz-F5-6Vc"/>
+                        <constraint firstItem="LtV-Kb-pdc" firstAttribute="top" secondItem="QmO-eM-mb8" secondAttribute="top" id="ZXk-lQ-bBb"/>
+                        <constraint firstAttribute="bottom" secondItem="LtV-Kb-pdc" secondAttribute="bottom" id="paq-MD-n2Z"/>
+                        <constraint firstAttribute="trailing" secondItem="LtV-Kb-pdc" secondAttribute="trailing" id="xuh-4j-tNQ"/>
+                    </constraints>
+                </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-cl-tS0">
+                    <rect key="frame" x="10" y="22" width="355" height="29"/>
+                    <segments>
+                        <segment title="2 Columns"/>
+                        <segment title="3 Columns"/>
+                        <segment title="6 Columns"/>
+                        <segment title="12 Columns"/>
+                    </segments>
+                    <connections>
+                        <action selector="didChangeSegment:" destination="-1" eventType="valueChanged" id="tOo-ld-6WM"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QmO-eM-mb8" secondAttribute="trailing" id="05J-MA-BC7"/>
+                <constraint firstAttribute="trailing" secondItem="5PJ-0l-dq5" secondAttribute="trailing" id="5Z6-yg-xSv"/>
+                <constraint firstAttribute="trailing" secondItem="wUe-cl-tS0" secondAttribute="trailing" constant="10" id="A9p-5G-zyC"/>
+                <constraint firstItem="5PJ-0l-dq5" firstAttribute="top" secondItem="wUe-cl-tS0" secondAttribute="bottom" constant="10" id="B39-xF-LQ9"/>
+                <constraint firstAttribute="bottom" secondItem="5PJ-0l-dq5" secondAttribute="bottom" id="MjJ-Gn-R5c"/>
+                <constraint firstItem="wUe-cl-tS0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Noo-Ro-qYH"/>
+                <constraint firstAttribute="bottom" secondItem="QmO-eM-mb8" secondAttribute="bottom" id="ary-my-P4Q"/>
+                <constraint firstItem="QmO-eM-mb8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ihv-qu-gCb"/>
+                <constraint firstItem="wUe-cl-tS0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="nEK-6u-yl9"/>
+                <constraint firstItem="5PJ-0l-dq5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uBb-vd-GYx"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
