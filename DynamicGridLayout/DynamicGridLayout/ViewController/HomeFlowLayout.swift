@@ -51,23 +51,28 @@ class HomeFlowLayout: UICollectionViewFlowLayout {
         
         // 如果之前沒有計算過Layout則計算並存入cache中
         if layoutAttributes[layoutType.keyName] == nil && collectionView != nil{
+            // 根據想要的column數量來計算一個cell的寬度
             let contentWidth:CGFloat = collectionView!.bounds.size.width - sectionInset.left - sectionInset.right
             let itemWidth = (contentWidth - minimumInteritemSpacing * (CGFloat(layoutType.column)-1)) / CGFloat(layoutType.column)
-            computeAndStoreAttributesWithItemWidth(layoutType ,CGFloat(itemWidth))
+            
+            // 計算cell的佈局
+            computeAndStoreAttributes(layoutType ,CGFloat(itemWidth))
             
         }
-        
+    }
+    
+    
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        // 佈局變化時記得跟著改變itemSize
         if let size = layoutItemSize[layoutType.keyName] {
             itemSize = size
         }
         
-    }
-    
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return layoutAttributes[layoutType.keyName]
     }
     
-    fileprivate func computeAndStoreAttributesWithItemWidth(_ layoutType:LayoutType ,_ itemWidth:CGFloat) {
+    // 計算cell的frame以及設定item size來提供系統計算UICollectionView的contentSize
+    fileprivate func computeAndStoreAttributes(_ layoutType:LayoutType ,_ itemWidth:CGFloat) {
         
         // 以sectionInset.top作為最初始的高度，紀錄每一個column的高度
         var columnHeights = [CGFloat](repeating: sectionInset.top, count: layoutType.column)
@@ -112,11 +117,11 @@ class HomeFlowLayout: UICollectionViewFlowLayout {
         
         // 用於系統計算collectionView的contentSize - 根據最高的Column來設置itemSize，使用總高度的平均值
         let itemHeight = (maxHeight - minimumLineSpacing * CGFloat(columnItemCount[column!])) / CGFloat(columnItemCount[column!])
-        itemSize = CGSize(width: itemWidth, height: itemHeight)
+        let cellSize = CGSize(width: itemWidth, height: itemHeight)
         
         // 將計算後的結果存起來
         layoutAttributes[layoutType.keyName] = attributes
-        layoutItemSize[layoutType.keyName] = itemSize
+        layoutItemSize[layoutType.keyName] = cellSize
         
     }
     
