@@ -12,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="DynamicGridLayout" customModuleProvider="target">
             <connections>
                 <outlet property="aCollectionView" destination="5PJ-0l-dq5" id="Mx7-06-GYd"/>
-                <outlet property="flowLayout" destination="2sT-m7-lB4" id="wkK-1A-APa"/>
+                <outlet property="flowLayout" destination="2sT-m7-lB4" id="2dA-KP-GnJ"/>
                 <outlet property="layoutSegment" destination="wUe-cl-tS0" id="BJw-DJ-mD1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

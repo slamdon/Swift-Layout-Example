@@ -18,7 +18,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupView()
         
     }
@@ -75,6 +74,7 @@ class HomeViewController: UIViewController {
         }
         
         flowLayout.items = items
+        aCollectionView.collectionViewLayout = flowLayout
         
     }
 

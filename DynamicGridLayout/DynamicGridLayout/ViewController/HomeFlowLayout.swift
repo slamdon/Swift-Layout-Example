@@ -41,7 +41,6 @@ class HomeFlowLayout: UICollectionViewFlowLayout {
     
     override func prepare() {
         super.prepare()
-        
         minimumInteritemSpacing = 10
         minimumLineSpacing      = 10
         
@@ -57,17 +56,19 @@ class HomeFlowLayout: UICollectionViewFlowLayout {
             
             // 計算cell的佈局
             computeAndStoreAttributes(layoutType ,CGFloat(itemWidth))
-            
+
         }
-    }
-    
-    
-    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+
         // 佈局變化時記得跟著改變itemSize
         if let size = layoutItemSize[layoutType.keyName] {
             itemSize = size
         }
-        
+
+
+    }
+    
+    
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         return layoutAttributes[layoutType.keyName]
     }
     
