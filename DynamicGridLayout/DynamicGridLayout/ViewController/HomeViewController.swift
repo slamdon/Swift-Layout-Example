@@ -41,9 +41,10 @@ class HomeViewController: UIViewController {
         }
         
         // 更換layout動畫
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 1, animations: { [unowned self] in
             self.aCollectionView.collectionViewLayout.invalidateLayout()
-            self.aCollectionView.performBatchUpdates({
+            
+            self.aCollectionView.performBatchUpdates({ [unowned self] in
                 self.aCollectionView.setCollectionViewLayout(self.flowLayout, animated: true)
             }, completion: nil)
         })

@@ -36,8 +36,13 @@ class HomeFlowLayout: UICollectionViewFlowLayout {
     
     var items = [UIImage]()
     var layoutType:LayoutType = .twoColumn
-    fileprivate var layoutAttributes = [String:[UICollectionViewLayoutAttributes]]()
-    fileprivate var layoutItemSize = [String:CGSize]()
+    fileprivate lazy var layoutAttributes:[String:[UICollectionViewLayoutAttributes]] = {
+        return [String:[UICollectionViewLayoutAttributes]]()
+    }()
+    
+    fileprivate lazy var layoutItemSize:[String:CGSize] = {
+        return [String:CGSize]()
+    }()
     
     override func prepare() {
         super.prepare()
