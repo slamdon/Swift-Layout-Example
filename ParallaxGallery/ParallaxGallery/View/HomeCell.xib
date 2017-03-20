@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCell" customModule="ParallaxGallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9lp-Ft-Waq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="280" id="zTi-69-SeL"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EE8-7d-dul">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                        <color key="backgroundColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿里山" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2K-TD-nCD">
+                        <rect key="frame" x="8" y="99.5" width="304" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-3-18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FM-xV-YgY">
+                        <rect key="frame" x="8" y="135" width="304" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4FM-xV-YgY" firstAttribute="top" secondItem="M2K-TD-nCD" secondAttribute="bottom" constant="8" id="6FA-ly-h2i"/>
+                <constraint firstItem="9lp-Ft-Waq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BsK-le-Wdg"/>
+                <constraint firstItem="4FM-xV-YgY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Cij-HU-w3z"/>
+                <constraint firstAttribute="trailing" secondItem="EE8-7d-dul" secondAttribute="trailing" id="R7L-8g-Pmj"/>
+                <constraint firstAttribute="bottom" secondItem="EE8-7d-dul" secondAttribute="bottom" id="S83-j3-Wsf"/>
+                <constraint firstAttribute="trailing" secondItem="9lp-Ft-Waq" secondAttribute="trailing" id="STP-Lu-6za"/>
+                <constraint firstAttribute="trailing" secondItem="4FM-xV-YgY" secondAttribute="trailing" constant="8" id="Y2f-MF-z1q"/>
+                <constraint firstItem="EE8-7d-dul" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZhL-OH-Gdy"/>
+                <constraint firstAttribute="trailing" secondItem="M2K-TD-nCD" secondAttribute="trailing" constant="8" id="if0-Ii-UV0"/>
+                <constraint firstItem="EE8-7d-dul" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ip1-k5-58J"/>
+                <constraint firstItem="M2K-TD-nCD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="oFy-pL-85J"/>
+                <constraint firstItem="9lp-Ft-Waq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oRm-6s-7oQ"/>
+                <constraint firstAttribute="bottom" secondItem="4FM-xV-YgY" secondAttribute="bottom" constant="8" id="v9o-3v-plO"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="9lp-Ft-Waq" id="in0-2V-vqn"/>
+                <outlet property="timeLabel" destination="4FM-xV-YgY" id="4fk-h5-B93"/>
+                <outlet property="titleLabel" destination="M2K-TD-nCD" id="jBC-hz-dMK"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
