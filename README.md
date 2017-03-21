@@ -9,7 +9,15 @@
 - Blog介紹 - [Swift實現瀑布流排版](https://ios.devdon.com/archives/593)
 - [Source Code](https://github.com/slamdon/Swift-Layout-Example/tree/master/DynamicGridLayout)
 
+## 捲動視差（Parallax Scrolling）
+
+![捲動視差](resource/Swift-Parallax-Scrolling.gif)
+ - Blog介紹 - [Swift實現捲動視差效果](https://ios.devdon.com/archives/643)
+ - [Source Code](https://github.com/slamdon/Swift-Layout-Example/tree/master/DynamicGridLayout)
+
 ## 相關內容
  - [Swift Transition Example](https://github.com/slamdon/Swift-Transition-Example) - 轉場動畫例子
  - [Swift Interesting Example](https://github.com/slamdon/Swift-Interesting) - 有趣的例子
  - [Swift Layout Example](https://github.com/slamdon/Swift-Layout-Example) - 佈局例子
+
+
