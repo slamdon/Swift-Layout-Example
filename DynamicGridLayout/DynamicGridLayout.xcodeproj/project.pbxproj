@@ -22,9 +22,9 @@
 		1AEE13CE1E763F8E003A177C /* DynamicGridLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicGridLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEE13D11E763F8E003A177C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AEE13D61E763F8E003A177C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1AEE13D81E763F8E003A177C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		1AEE13D81E763F8E003A177C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AEE13DB1E763F8E003A177C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1AEE13DD1E763F8E003A177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		1AEE13DD1E763F8E003A177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AEE13E61E763FCE003A177C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1AEE13E71E763FCE003A177C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		1AEE13EA1E764093003A177C /* HomeImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeImageCell.swift; sourceTree = "<group>"; };
@@ -65,20 +65,9 @@
 				1AEE13D11E763F8E003A177C /* AppDelegate.swift */,
 				1AEE13E51E763FB7003A177C /* ViewController */,
 				1AEE13E41E763FB7003A177C /* View */,
-				1AEE13E31E763FB7003A177C /* Support */,
+				1AF911101FCEAF9200A841CF /* Supports */,
 			);
 			path = DynamicGridLayout;
-			sourceTree = "<group>";
-		};
-		1AEE13E31E763FB7003A177C /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				1AEE13D51E763F8E003A177C /* Main.storyboard */,
-				1AEE13D81E763F8E003A177C /* Assets.xcassets */,
-				1AEE13DA1E763F8E003A177C /* LaunchScreen.storyboard */,
-				1AEE13DD1E763F8E003A177C /* Info.plist */,
-			);
-			path = Support;
 			sourceTree = "<group>";
 		};
 		1AEE13E41E763FB7003A177C /* View */ = {
@@ -98,6 +87,17 @@
 				1AEE13E71E763FCE003A177C /* HomeViewController.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1AF911101FCEAF9200A841CF /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				1AEE13D51E763F8E003A177C /* Main.storyboard */,
+				1AEE13D81E763F8E003A177C /* Assets.xcassets */,
+				1AEE13DA1E763F8E003A177C /* LaunchScreen.storyboard */,
+				1AEE13DD1E763F8E003A177C /* Info.plist */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +342,7 @@
 				1AEE13E21E763F8E003A177C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

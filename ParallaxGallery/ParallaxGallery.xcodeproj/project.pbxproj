@@ -23,7 +23,7 @@
 		1A9F55FB1E7CF3CA0025DA00 /* ParallaxGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9F55FE1E7CF3CA0025DA00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A9F56031E7CF3CA0025DA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A9F56051E7CF3CA0025DA00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		1A9F56051E7CF3CA0025DA00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A9F56081E7CF3CA0025DA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A9F560A1E7CF3CA0025DA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A9F56131E7CF3FC0025DA00 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -69,20 +69,9 @@
 				1A9F561D1E7D38890025DA00 /* Model */,
 				1A9F56121E7CF3E60025DA00 /* ViewController */,
 				1A9F56111E7CF3E60025DA00 /* View */,
-				1A9F56101E7CF3E60025DA00 /* Support */,
-				1A9F560A1E7CF3CA0025DA00 /* Info.plist */,
+				1AF911111FCEAFC300A841CF /* Supports */,
 			);
 			path = ParallaxGallery;
-			sourceTree = "<group>";
-		};
-		1A9F56101E7CF3E60025DA00 /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				1A9F56021E7CF3CA0025DA00 /* Main.storyboard */,
-				1A9F56051E7CF3CA0025DA00 /* Assets.xcassets */,
-				1A9F56071E7CF3CA0025DA00 /* LaunchScreen.storyboard */,
-			);
-			path = Support;
 			sourceTree = "<group>";
 		};
 		1A9F56111E7CF3E60025DA00 /* View */ = {
@@ -117,6 +106,17 @@
 				1A9F56211E7D38DE0025DA00 /* WorldHeritageStore.swift */,
 			);
 			path = Store;
+			sourceTree = "<group>";
+		};
+		1AF911111FCEAFC300A841CF /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				1A9F56021E7CF3CA0025DA00 /* Main.storyboard */,
+				1A9F56051E7CF3CA0025DA00 /* Assets.xcassets */,
+				1A9F56071E7CF3CA0025DA00 /* LaunchScreen.storyboard */,
+				1A9F560A1E7CF3CA0025DA00 /* Info.plist */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +362,7 @@
 				1A9F560F1E7CF3CA0025DA00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
