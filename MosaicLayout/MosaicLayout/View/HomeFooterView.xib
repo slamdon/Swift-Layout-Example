@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="HomeFooterView" customModule="MosaicLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7G-p8-RsZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nXA-pg-3KU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="backgroundColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 張圖片" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hi9-Pn-c1s">
+                    <rect key="frame" x="8" y="25" width="304" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="d7G-p8-RsZ" secondAttribute="bottom" id="3kl-86-bhK"/>
+                <constraint firstAttribute="trailing" secondItem="hi9-Pn-c1s" secondAttribute="trailing" constant="8" id="50Q-xM-T0x"/>
+                <constraint firstAttribute="trailing" secondItem="d7G-p8-RsZ" secondAttribute="trailing" id="7Rr-mi-7px"/>
+                <constraint firstItem="d7G-p8-RsZ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Hed-Lw-s2J"/>
+                <constraint firstItem="d7G-p8-RsZ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="LZI-Ju-S2Q"/>
+                <constraint firstItem="hi9-Pn-c1s" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="QG3-1b-TAj"/>
+                <constraint firstAttribute="bottom" secondItem="hi9-Pn-c1s" secondAttribute="bottom" constant="8" id="oH8-Lm-5JP"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="hi9-Pn-c1s" id="KNv-gT-JbR"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
