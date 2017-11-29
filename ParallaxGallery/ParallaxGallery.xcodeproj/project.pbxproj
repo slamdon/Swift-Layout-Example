@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A090D9D1FCEB1A60060DCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A090D9B1FCEB1A60060DCDF /* LaunchScreen.storyboard */; };
+		1A090D9E1FCEB1A60060DCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A090D9C1FCEB1A60060DCDF /* Main.storyboard */; };
 		1A9F55FF1E7CF3CA0025DA00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F55FE1E7CF3CA0025DA00 /* AppDelegate.swift */; };
-		1A9F56041E7CF3CA0025DA00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F56021E7CF3CA0025DA00 /* Main.storyboard */; };
 		1A9F56061E7CF3CA0025DA00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F56051E7CF3CA0025DA00 /* Assets.xcassets */; };
-		1A9F56091E7CF3CA0025DA00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F56071E7CF3CA0025DA00 /* LaunchScreen.storyboard */; };
 		1A9F56151E7CF3FC0025DA00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F56131E7CF3FC0025DA00 /* HomeViewController.swift */; };
 		1A9F56161E7CF3FC0025DA00 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9F56141E7CF3FC0025DA00 /* HomeViewController.xib */; };
 		1A9F56191E7CF4450025DA00 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9F56171E7CF4450025DA00 /* HomeCell.swift */; };
@@ -20,11 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A090D9B1FCEB1A60060DCDF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A090D9C1FCEB1A60060DCDF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1A9F55FB1E7CF3CA0025DA00 /* ParallaxGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParallaxGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9F55FE1E7CF3CA0025DA00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A9F56031E7CF3CA0025DA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A9F56051E7CF3CA0025DA00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A9F56081E7CF3CA0025DA00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A9F560A1E7CF3CA0025DA00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A9F56131E7CF3FC0025DA00 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1A9F56141E7CF3FC0025DA00 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -111,9 +111,9 @@
 		1AF911111FCEAFC300A841CF /* Supports */ = {
 			isa = PBXGroup;
 			children = (
-				1A9F56021E7CF3CA0025DA00 /* Main.storyboard */,
+				1A090D9B1FCEB1A60060DCDF /* LaunchScreen.storyboard */,
+				1A090D9C1FCEB1A60060DCDF /* Main.storyboard */,
 				1A9F56051E7CF3CA0025DA00 /* Assets.xcassets */,
-				1A9F56071E7CF3CA0025DA00 /* LaunchScreen.storyboard */,
 				1A9F560A1E7CF3CA0025DA00 /* Info.plist */,
 			);
 			path = Supports;
@@ -179,9 +179,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A9F56091E7CF3CA0025DA00 /* LaunchScreen.storyboard in Resources */,
+				1A090D9E1FCEB1A60060DCDF /* Main.storyboard in Resources */,
 				1A9F56061E7CF3CA0025DA00 /* Assets.xcassets in Resources */,
-				1A9F56041E7CF3CA0025DA00 /* Main.storyboard in Resources */,
+				1A090D9D1FCEB1A60060DCDF /* LaunchScreen.storyboard in Resources */,
 				1A9F56161E7CF3FC0025DA00 /* HomeViewController.xib in Resources */,
 				1A9F561A1E7CF4450025DA00 /* HomeCell.xib in Resources */,
 			);
@@ -203,27 +203,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1A9F56021E7CF3CA0025DA00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A9F56031E7CF3CA0025DA00 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		1A9F56071E7CF3CA0025DA00 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A9F56081E7CF3CA0025DA00 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A9F560B1E7CF3CA0025DA00 /* Debug */ = {
@@ -322,7 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DT8726CBX4;
-				INFOPLIST_FILE = ParallaxGallery/Info.plist;
+				INFOPLIST_FILE = ParallaxGallery/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ios.devdon.com.ParallaxGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,7 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DT8726CBX4;
-				INFOPLIST_FILE = ParallaxGallery/Info.plist;
+				INFOPLIST_FILE = ParallaxGallery/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ios.devdon.com.ParallaxGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";

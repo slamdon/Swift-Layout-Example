@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A090D981FCEB0A40060DCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A090D971FCEB0A40060DCDF /* Main.storyboard */; };
+		1A090D9A1FCEB0B10060DCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A090D991FCEB0B10060DCDF /* LaunchScreen.storyboard */; };
 		1AEE13D21E763F8E003A177C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE13D11E763F8E003A177C /* AppDelegate.swift */; };
-		1AEE13D71E763F8E003A177C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE13D51E763F8E003A177C /* Main.storyboard */; };
 		1AEE13D91E763F8E003A177C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE13D81E763F8E003A177C /* Assets.xcassets */; };
-		1AEE13DC1E763F8E003A177C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE13DA1E763F8E003A177C /* LaunchScreen.storyboard */; };
 		1AEE13E81E763FCE003A177C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE13E61E763FCE003A177C /* HomeViewController.swift */; };
 		1AEE13E91E763FCE003A177C /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AEE13E71E763FCE003A177C /* HomeViewController.xib */; };
 		1AEE13EC1E764093003A177C /* HomeImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE13EA1E764093003A177C /* HomeImageCell.swift */; };
@@ -19,11 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A090D971FCEB0A40060DCDF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1A090D991FCEB0B10060DCDF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AEE13CE1E763F8E003A177C /* DynamicGridLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicGridLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AEE13D11E763F8E003A177C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AEE13D61E763F8E003A177C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AEE13D81E763F8E003A177C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1AEE13DB1E763F8E003A177C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AEE13DD1E763F8E003A177C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AEE13E61E763FCE003A177C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1AEE13E71E763FCE003A177C /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -92,10 +92,10 @@
 		1AF911101FCEAF9200A841CF /* Supports */ = {
 			isa = PBXGroup;
 			children = (
-				1AEE13D51E763F8E003A177C /* Main.storyboard */,
 				1AEE13D81E763F8E003A177C /* Assets.xcassets */,
-				1AEE13DA1E763F8E003A177C /* LaunchScreen.storyboard */,
 				1AEE13DD1E763F8E003A177C /* Info.plist */,
+				1A090D971FCEB0A40060DCDF /* Main.storyboard */,
+				1A090D991FCEB0B10060DCDF /* LaunchScreen.storyboard */,
 			);
 			path = Supports;
 			sourceTree = "<group>";
@@ -160,10 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AEE13DC1E763F8E003A177C /* LaunchScreen.storyboard in Resources */,
 				1AEE13ED1E764093003A177C /* HomeImageCell.xib in Resources */,
 				1AEE13D91E763F8E003A177C /* Assets.xcassets in Resources */,
-				1AEE13D71E763F8E003A177C /* Main.storyboard in Resources */,
+				1A090D9A1FCEB0B10060DCDF /* LaunchScreen.storyboard in Resources */,
+				1A090D981FCEB0A40060DCDF /* Main.storyboard in Resources */,
 				1AEE13E91E763FCE003A177C /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,27 +183,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1AEE13D51E763F8E003A177C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AEE13D61E763F8E003A177C /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		1AEE13DA1E763F8E003A177C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AEE13DB1E763F8E003A177C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1AEE13DE1E763F8E003A177C /* Debug */ = {
@@ -302,7 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DT8726CBX4;
-				INFOPLIST_FILE = DynamicGridLayout/Info.plist;
+				INFOPLIST_FILE = DynamicGridLayout/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ios.devdon.com.DynamicGridLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -315,7 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DT8726CBX4;
-				INFOPLIST_FILE = DynamicGridLayout/Info.plist;
+				INFOPLIST_FILE = DynamicGridLayout/Supports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ios.devdon.com.DynamicGridLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
